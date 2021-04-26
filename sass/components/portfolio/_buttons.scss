@@ -1,0 +1,50 @@
+.buttons {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__block {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+}
+
+.buttons__list {
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .buttons__btn {
+    &:hover,
+    &:focus {
+      background-color: $blue-color;
+      color: $white-color;
+    }
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background: $section-grey;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: $main-color;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.buttons__list > .buttons__link {
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  margin-right: 9px;
+}

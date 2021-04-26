@@ -1,0 +1,40 @@
+.modal-form__checkbox {
+  padding-bottom: 20px;
+  margin-left: 24px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $grey-color;
+  &--input {
+    position: absolute;
+    left: 53px;
+    top: 74.4%;
+
+    width: 16px;
+    height: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+
+    &:checked + .modal-form__icon--agree {
+      background-image: url(../images/check.svg);
+      background-color: $blue-color;
+      background-size: contain;
+      align-items: center;
+      border: none;
+    }
+  }
+}
+.modal-form__icon--agree {
+  position: absolute;
+  top: 75.4%;
+  left: 53px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid $main-color;
+}

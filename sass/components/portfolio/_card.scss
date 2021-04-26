@@ -1,0 +1,17 @@
+.card {
+  padding: 20px 24px;
+  &__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $main-color;
+  }
+}
+
+.card__category {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $grey-color;
+}

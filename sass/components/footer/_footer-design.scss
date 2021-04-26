@@ -1,0 +1,8 @@
+.footer__design {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  &__container {
+    margin-right: 70px;
+  }
+}

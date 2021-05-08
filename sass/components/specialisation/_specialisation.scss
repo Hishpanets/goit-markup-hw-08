@@ -1,5 +1,9 @@
 .specialisation {
+  display: none;
   padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .specialisation__container {
   margin: 0;

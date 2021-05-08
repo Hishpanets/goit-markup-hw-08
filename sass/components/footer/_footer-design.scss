@@ -1,8 +1,17 @@
 .footer__design {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
   &__container {
-    margin-right: 70px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    text-align: inherit;
+    justify-content: space-between;
   }
 }

@@ -1,7 +1,46 @@
-.advantages {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    width: 100%;
+  }
+  .advantages__icon--antena {
+    flex-basis: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+  }
+  .advantages__icon--clock {
+    flex-basis: calc(100% / 2 - 15px);
+
+    margin-bottom: 30px;
+  }
+  .advantages__icon--diagram {
+    flex-basis: calc(100% / 2 - 15px);
+  }
+  .advantages__icon--astronaut {
+    flex-basis: calc(100% / 2 - 15px);
+  }
+  .advantages__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: flex;
+
+    margin: -30px;
+  }
+  .advantages__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 30px;
+    &:first-child {
+      margin-right: 0px;
+    }
+  }
 }
 .advantages__title {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;
@@ -10,6 +49,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-color;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .advantages__text {
   margin: 0;
@@ -21,13 +63,13 @@
 }
 .advantages__item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
 
   &.advantages__icon--antena::before {
     content: '';
     display: block;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
@@ -41,7 +83,7 @@
   &.advantages__icon--clock::before {
     content: '';
     display: block;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
@@ -55,7 +97,7 @@
   &.advantages__icon--diagram::before {
     content: '';
     display: block;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
@@ -70,7 +112,7 @@
   &.advantages__icon--astronaut::before {
     content: '';
     display: block;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 

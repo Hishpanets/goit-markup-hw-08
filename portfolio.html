@@ -23,35 +23,84 @@
             <span class="logo__word">Web</span
             ><span class="logo__secword">Studio</span></a
           >
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width=40 height=40 aria-label="Переключатель мобильного меню">
+          
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          
+              <use class="icon-cross" href="./images/icons.svg#cross"></use>
+          
+            </svg>
+          </button>
+          
+          <div class="menu-container" id="menu-container" data-menu>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студия</a>
             </li>
-            <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current site-nav__link--page"
-                >Портфолио</a
-              >
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
             </li>
-            <li class="site-nav__item">
-              <a href="/Контакты" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-          <ul class="site-nav__contacts">
-            <li class="site-nav__contacts--list">
-              <a href="mailto:info@devstudio.com" class="site-nav__link"
-                ><svg class="site-nav__icon--envelope" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-            </li>
-            <li class="site-nav__contacts--list">
-              <a href="tel:+380961111111" class="site-nav__link">
-                <svg class="site-nav__icon--smartphone" width="12" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-              >
+            <li class="mobile-nav__item">
+              <a href="/Контакты" class="mobile-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
+          <ul class="mobile-nav__contacts">
+            <li class="mobile-nav__contacts--list">
+              <a href="tel:+380961111111" class="mobile-nav__link-phone">+38 096 111 11 11</a>
+          
+            </li>
+            <li class="mobile-nav__contacts--list">
+              <a href="mailto:info@devstudio.com" class="mobile-nav__link-mail">info@devstudio.com</a>
+            </li>
+          </ul>
+            <ul class="social__menu">
+          
+              <li class="social__menu-item">
+                <a href="#" class="social__menu-link">Instagram</a>
+              </li>
+          
+              <li class="social__menu-item">
+                <a href="#" class="social__menu-link">Twitter</a>
+              </li>
+          
+              <li class="social__menu-item">
+                <a href="#" class="social__menu-link">Facebook</a>
+              </li>
+          
+              <li class="social__menu-item">
+                <a href="#" class="social__menu-link">LinkedIn</a>
+              </li>
+                    
+            </ul>
+          </div> 
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link ">Студия</a>
+        </li>
+        <li class="nav__item">
+          <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+        </li>
+        <li class="nav__item">
+          <a href="/Контакты" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="nav__contacts">
+        <li class="nav__contacts--list">
+          <a href="mailto:info@devstudio.com" class="nav__link-mail"><svg class="nav__icon--envelope" width="14" height="10">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="nav__contacts--list">
+          <a href="tel:+380961111111" class="nav__link-phone">
+            <svg class="nav__icon--smartphone" width="10" height="14">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+      
+        </li>
+      
+      </ul>
+         </nav>
       </div>
     </header>
        <!--Кнопки-->
@@ -81,10 +130,10 @@
           <ul class="content__cards--list">
             <li class="content__cards--item">
               <div class="content__cards--box">
-                <img
+                <img srcset="./images/formated/technocrack1x.jpg 1x, ./images/formated/technocrack@2x.jpg 2x"
                   src="./images/technocrack.jpg"
                   alt="Технокряк"
-                  width="370"
+                  width="450"
                 />
                 <div class="content__cards--overlay">
                   <p>
@@ -101,10 +150,10 @@
             </li>
             <li class="content__cards--item">
               <div class="content__cards--box">
-                <img
+                <img srcset="./images/formated/poster1x.jpg 1x, ./images/formated/poster@2x.jpg 2x"
                   src="./images/poster.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
+                  width="450"
                 />
                 <div class="content__cards--overlay">
                   <p>
@@ -121,10 +170,10 @@
             </li>
             <li class="content__cards--item">
               <div class="content__cards--box">
-                <img
+                <img srcset="./images/formated/seafood1x.jpg 1x, ./images/formated/seafood@2x.jpg 2x"
                   src="./images/seafood.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
+                 width="450"
                 />
                 <div class="content__cards--overlay">
                   <p>
@@ -140,24 +189,30 @@
               </div>
             </li>
             <li class="content__cards--item">
-              <img src="./images/prime.jpg" alt="Проект Prime" width="370" />
+              <img srcset="./images/formated/prime1x.jpg 1x, ./images/formated/prime@2x.jpg 2x" 
+              src="./images/prime.jpg" 
+              alt="Проект Prime"
+              width="450"  />
               <div class="card">
                 <h2 class="card__title">Проект Prime</h2>
                 <p class="card__category">Маркетинг</p>
               </div>
             </li>
             <li class="content__cards--item">
-              <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
+              <img srcset="./images/formated/boxes1x.jpg 1x, ./images/formated/boxes@2x.jpg 2x" 
+              src="./images/boxes.jpg" 
+              alt="Проект Boxes"
+              width="450" />
               <div class="card">
                 <h2 class="card__title">Проект Boxes</h2>
                 <p class="card__category">Приложение</p>
               </div>
             </li>
             <li class="content__cards--item">
-              <img
+              <img srcset="./images/formated/inspiration1x.jpg 1x, ./images/formated/inspiration@2x.jpg 2x"
                 src="./images/inspirationhasnoborders.jpg"
                 alt="Inspiration has no Borders"
-                width="370"
+               width="450"
               />
               <div class="card">
                 <h2 class="card__title">Inspiration has no Borders</h2>
@@ -165,10 +220,10 @@
               </div>
             </li>
             <li class="content__cards--item">
-              <img
+              <img srcset="./images/formated/limedition1x.jpg 1x, ./images/formated/limedition@2x.jpg 2x"
                 src="./images/limitededition.jpg"
                 alt="Издание Limited Edition"
-                width="370"
+               width="450"
               />
               <div class="card">
                 <h2 class="card__title">Издание Limited Edition</h2>
@@ -176,17 +231,17 @@
               </div>
             </li>
             <li class="content__cards--item">
-              <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
+              <img srcset="./images/formated/prolab1x.jpg 1x, ./images/formated/prolab@2x.jpg 2x" src="./images/lab.jpg" alt="Проект LAB" width="370" />
               <div class="card">
                 <h2 class="card__title">Проект LAB</h2>
                 <p class="card__category">Маркетинг</p>
               </div>
             </li>
             <li class="content__cards--item">
-              <img
+              <img srcset="./images/formated/growbusiness1x.jpg 1x, ./images/formated/growbusiness@2x.jpg 2x"
                 src="./images/growingbusiness.jpg"
                 alt="Growing Business"
-                width="370"
+                width="450"
               />
               <div class="card">
                 <h2 class="card__title">Growing Business</h2>
@@ -238,26 +293,22 @@
             <li class="join__item">
               <a href="#" class="join__link">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use></svg></a>
             </li>
             <li class="join__item">
               <a href="#" class="join__link">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-bird"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-bird"></use></svg ></a>
             </li>
             <li class="join__item">
               <a href="#" class="join__link">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg ></a>
             </li>
             <li class="join__item">
               <a href="#" class="join__link">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg   ></a>
             </li>
           </ul>
         </div>
@@ -282,5 +333,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -11,4 +11,7 @@
   &:hover {
     color: #0089fa;
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }

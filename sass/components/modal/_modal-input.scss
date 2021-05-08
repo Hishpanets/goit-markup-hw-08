@@ -18,4 +18,7 @@
   &:hover {
     border-color: $blue-color;
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 370px;
+  }
 }

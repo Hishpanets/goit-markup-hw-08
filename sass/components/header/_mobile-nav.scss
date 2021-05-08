@@ -1,0 +1,38 @@
+.mobile-nav__item {
+  &:first-child {
+    margin-top: 0px;
+  }
+  margin-top: 32px;
+}
+.mobile-nav__list {
+  font-size: 40px;
+}
+.mobile-nav__link {
+  font-family: roboto;
+  font-weight: 500;
+  color: $main-color;
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+.mobile-nav__contacts {
+  margin-top: 302px;
+  display: block;
+}
+.mobile-nav__contacts--list {
+  margin-bottom: 32px;
+}
+.mobile-nav__link-phone {
+  font-family: roboto;
+  font-weight: 500;
+  color: $blue-color;
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+.mobile-nav__link-mail {
+  font-family: roboto;
+  font-weight: 500;
+  color: $grey-color;
+  font-size: 24px;
+}

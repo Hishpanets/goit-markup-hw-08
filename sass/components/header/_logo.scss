@@ -1,15 +1,23 @@
 .site-nav__logo {
-  display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
   margin: 0;
+  margin-right: auto;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   color: $black-color;
   text-decoration: none;
+  @media screen and (min-width: 480px) {
+    display: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 88px;
+  }
 }
+
 .logo__word {
   color: $blue-color;
 }

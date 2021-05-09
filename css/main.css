@@ -1150,6 +1150,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer__design {
+    padding-top: 60px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

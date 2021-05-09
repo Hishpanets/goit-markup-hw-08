@@ -15,6 +15,9 @@
   @media screen and (min-width: 1200px) {
     text-align: inherit;
   }
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 .form__button {
   display: block;

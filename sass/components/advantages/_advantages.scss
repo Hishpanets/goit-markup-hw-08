@@ -61,66 +61,77 @@
   letter-spacing: 0.03em;
   color: $grey-color;
 }
-.advantages__item {
-  &:not(:last-child) {
-    margin-right: 0px;
-  }
+.advantages {
+  .advantages__item {
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+    &.advantages__icon--antena {
+      margin-bottom: 30px;
+    }
+    &.advantages__icon--clock {
+      margin-bottom: 30px;
+    }
+    &.advantages__icon--diagram {
+      margin-bottom: 30px;
+    }
 
-  &.advantages__icon--antena::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 30px;
+    &.advantages__icon--antena::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
 
-    background: $section-grey;
-    background-image: url('../images/Group.png');
-    background-size: 70px 70px contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-  }
-  &.advantages__icon--clock::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 30px;
+      background: $section-grey;
+      background-image: url('../images/Group.png');
+      background-size: 70px 70px contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+    &.advantages__icon--clock::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
 
-    background: $section-grey;
-    background-image: url('../images/clock.png');
-    background-size: 70px 70px contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-  }
-  &.advantages__icon--diagram::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 30px;
+      background: $section-grey;
+      background-image: url('../images/clock.png');
+      background-size: 70px 70px contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+    &.advantages__icon--diagram::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
 
-    background: $section-grey;
-    background-image: url('../images/diagram.png');
-    background-size: 70px 70px contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-  }
+      background: $section-grey;
+      background-image: url('../images/diagram.png');
+      background-size: 70px 70px contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
 
-  &.advantages__icon--astronaut::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 30px;
+    &.advantages__icon--astronaut::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
 
-    background: $section-grey;
-    background-image: url('../images/astronaut.png');
-    background-size: 70px 70px contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
+      background: $section-grey;
+      background-image: url('../images/astronaut.png');
+      background-size: 70px 70px contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
   }
 }
